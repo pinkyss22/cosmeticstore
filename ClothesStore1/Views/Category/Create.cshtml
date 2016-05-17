@@ -1,0 +1,47 @@
+﻿@model ClothesStore1.Models.Product
+{
+    ViewBag.Title = "Tạo danh mục";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="right">
+    <div class="line-top"></div>
+    <div class="title">Thêm mới danh mục</div>
+    <div class="line-bottom"></div>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model=>model.ProductName)
+        @Html.TextBoxFor(model=>model.ProductName)
+        @Html.ValidationMessageFor(model=> model.ProductName)
+        
+        @Html.LabelFor(model=>model.ProductPrice)
+        @Html.TextBoxFor(model=>model.ProductPrice)
+        @Html.ValidationMessageFor(model=>model.ProductPrice)
+        
+        @Html.LabelFor(model=>model.ProductQuantity)
+        @Html.TextBoxFor(model=>model.ProductQuantity)
+        @Html.ValidationMessageFor(model=>model.ProductQuantity)
+        
+        @Html.LabelFor(model=>model.ProductDescription)
+        @Html.TextAreaFor(model=>model.ProductDescription)
+        @Html.ValidationMessageFor(model=>model.ProductDescription)
+        
+        @Html.LabelFor(model=>model.ProductSupplier)
+        @Html.TextBoxFor(model=>model.ProductSupplier)
+        @Html.ValidationMessageFor(model=>model.ProductSupplier)
+        
+        @Html.LabelFor(model=>model.ProductState)
+        @Html.DropDownList("ProductStateId",(IEnumerable<SelectListItem>)ViewBag.ProductState, "Chọn")
+        
+        @Html.LabelFor(model=>model.CategoryId)
+        @Html.DropDownList("CategoriId", (IEnumerable<SelectListItem>)ViewBag.Category, "Chọn")
+        
+        @Html.LabelFor(model=>model.ImageInfors)
+        <input type="file" multiple="multiple"/>
+        
+        <input type="button" value="Tạo"/>
+    }
+</div>
+
+   
+

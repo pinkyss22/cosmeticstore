@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewBag.Title</title>
+        <link href="~/Content/css/main.css" rel="stylesheet" />
+        <script>
+            function changeImage($s) {
+                var image = document.getElementById('myImage');
+                image.src = $s;
+            }
+        </script>
+    </head>
+    <body>
+        @RenderBody()
+    </body>
+</html>

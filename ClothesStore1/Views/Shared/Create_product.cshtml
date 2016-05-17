@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewBag.Title</title>
+        <link href="~/Content/css/main.css" rel="stylesheet" />
+        <!--Script-->
+        <script>
+            function changeImage($s) {
+                var image = document.getElementById('myImage');
+                image.src = $s;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="head-menu">
+            <div id="logo">
+                <a href=""><img src="~/Content/images/products/logo.png" /></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">MENU</a>
+                        <div class="dropdown-content">
+                            <div class="ddc-1"><a href="#">Menu 001</a></div>
+                            <div class="ddc-1"><a href="#">Menu 002</a></div>
+                            <div class="ddc-1"><a href="#">Menu 003</a></div>
+                            <div class="ddc-1"><a href="#">Menu 004</a></div>
+                        </div>
+                    </li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">THÔNG TIN LIÊN HỆ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Hello ADMIN</a>
+                        <div class="dropdown-content">
+                            <div class="ddc-1"><a href="#">Quản lý danh mục</a></div>
+                            <div class="ddc-1"><a href="#">Quản lý sản phẩm</a></div>
+                            <div class="ddc-1"><a href="#">Quản lý tài khoản</a></div>
+                            <div class="ddc-1"><a href="#">Đăng xuất</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href=""><img src="~/Content/images/search/search-button.png" /></a>
+                            <div class="dropdown-content search">
+                                <input type="text" />
+                                <input type="button" value="Search" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href=""><img src="~/Content/images/search/cart.png" /></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="line"></div>
+        </div>
+        <div id="create-content">
+            <div id="left">
+                <div class="title"><p class="te">Admin menu</p></div>
+                <ul>
+                    <li><a href="#">Quản lý danh mục</a></li>
+                    <li><a href="#">Quản lý sản phẩm</a></li>
+                    <li><a href="#">Quản lý tài khoản</a></li>
+                    <li><a href="#">Quản lý banner</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <div class="line-top"></div>
+                <div class="title">Thông tin sản phẩm mới</div>
+                <div class="line-bottom"></div>
+                <form>
+                    <div class="label">Tên sản phẩm: </div>
+                    <input type="text" name="ProductName"/>
+                    <div class="label">Giá sản phẩm:</div>
+                    <input type="number" name="ProductPrice" />
+                    <div class="label">Danh mục:</div>
+                    <input type="text" name="ProductPrice" />
+                    <div class="label">Nơi sản xuất: </div>
+                    <input type="text" name="Sup" />
+                    <div class="label">Hình ảnh:</div>
+                    <input type="file" multiple="multiple" name="ProductName"/>
+                    <div class="label">Mô tả</div>
+                    <input type="text" name="ProductName" />
+                    <br>
+                    <input type="button" value="Đăng sản phẩm" />
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="top">
+                <div class="logo"><img src="~/Content/images/banner/footer-logo.png" /></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Tìm kiếm nâng cao</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Thông tin</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="line1"></div>
+            <div class="bottom">
+                <p>Coppyright © 2016 3T. All Rights Reserved</p>
+            </div>
+        </div>
+        @RenderBody()
+    </body>
+</html>

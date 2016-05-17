@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Cập nhật";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@model ClothesStore1.Models.Category
+
+<div id="right">
+    <div class="line-top"></div>
+    <div class="title">cập nhật</div>
+    <div class="line-bottom"></div>
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model=>model.CategoryId)
+        <div class="label">Tên danh mục: </div>
+        @Html.EditorFor(model => model.CategoryName)
+        <br />
+        @Html.ValidationMessageFor(model => model.CategoryName)
+        <br>
+        <input type="submit" value="Cập nhật" />
+    }
+</div>

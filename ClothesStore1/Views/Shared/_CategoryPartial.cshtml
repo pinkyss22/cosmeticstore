@@ -1,0 +1,6 @@
+﻿@model IEnumerable<ClothesStore1.Models.Category>
+
+@foreach(var item in Model)
+{
+    <div class="child-menu"><a href="@Url.Action("ProductByCategory", "Product", new { id = @item.CategoryId })">@item.CategoryName</a></div>
+}

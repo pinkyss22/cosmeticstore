@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="534d5d9a3b8045ef8058c1a4268d5157" Name="Diagram1">
+        <EntityTypeShape EntityType="CosmeticsDbModel.Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.ImageInfor" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.OrderDetail" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.Order" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.OrderState" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.Product" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.ProductState" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CosmeticsDbModel.User" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__Product__Categor__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__ImageInfo__Produ__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__OrderDeta__Order__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__OrderDeta__Produ__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__Orders__OrderSta__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="CosmeticsDbModel.FK__Product__Product__1ED998B2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

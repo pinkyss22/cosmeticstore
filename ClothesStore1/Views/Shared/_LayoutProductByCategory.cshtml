@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewBag.Title</title>
+        <link href="~/Content/css/main.css" rel="stylesheet" />
+        <!--Script-->
+        <script>
+            function changeImage($s) {
+                var image = document.getElementById('myImage');
+                image.src = $s;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="head-menu">
+            <div id="logo">
+                <a href=""><img src="~/Content/images/products/logo.png" /></a>
+            </div>
+            <div id="menu">
+                <div class="dropdow">
+                    <div class="dropdown-content">
+                        <div class="parent-menu">
+                            <div class="title"><a href="#">Danh mục</a></div>
+                            <div class="parent-menu-content">
+                                <div class="child-menu"><a href="#">Danh mục 1</a></div>
+                                <div class="child-menu"><a href="#">Danh mục 2</a></div>
+                                <div class="child-menu"><a href="#">Danh mục 3</a></div>
+                            </div>
+                        </div>
+                        <div class="parent-menu">
+                            <div class="title"><a href="#">Blogs</a></div>
+                        </div>
+                        <div class="parent-menu">
+                            <div class="title"><a href="#">Giới thiệu</a></div>
+                        </div>
+                        <div class="parent-menu">
+                            <div class="title"><a href="#">Thông tin liên hệ</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin">
+                    <div class="parent-menu">
+                        <div class="title">Hello, Admin</div>
+                        <div class="parent-menu-content">
+                            <div class="child-menu"><a href="#">Đăng sản phẩm</a></div>
+                            <div class="child-menu"><a href="#">Quản lý sản phẩm</a></div>
+                            <div class="child-menu"><a href="#">Quản lý danh mục</a></div>
+                            <div class="child-menu"><a href="#">Quản lý banner</a></div>
+                            <div class="child-menu"><a href="#">Quản lý Đơn hàng</a></div>
+                            <div class="child-menu"><a href="#">Đăng xuất</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <a href="#"></a>
+                        <div class="search-content">
+                            <input type="text">
+                            <input type="button" value="Tìm" />
+                            <a href="#">Nâng cao</a>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <a href="#"></a>
+                        <div class="cart-content">
+                            <div class="box">
+                                <div class="picture">
+                                    <img src="~/Content/images/products/dress/1.png" />
+                                </div>
+                                <div class="name">Tên sản phẩm</div>
+                                <div class="price">999 999  VNĐ</div>
+                            </div>
+                            <div class="box">
+                                <div class="picture">
+                                    <img src="~/Content/images/products/dress/1.png" />
+                                </div>
+                                <div class="name">Tên sản phẩm</div>
+                                <div class="price">999 999  VNĐ</div>
+                            </div>
+                            <div class="action">
+                                <input type="button" value="Thanh toán" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="line"></div>
+        </div>
+        <!--Begin Content-->
+        <div id="status1">
+            <div class="name"><a href="#">Home</a></div>
+            <div class="symb"></div>
+            <div class="name actived">Category Name</div>
+        </div>       
+        <div id="featured-product">
+            <div class="title1">TÊN DANH MỤC</div>
+            <div class="list-product">
+                <div id="page"> 
+                    <div class="page-li">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                    </div>                   
+                   
+                </div>
+                <div class="box first">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/1.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/2.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/3.jpg" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box last">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/4.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box first">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/1.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/2.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/3.jpg" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box last">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/4.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box first">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/1.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/2.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box second">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/3.jpg" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div class="box last">
+                    <a href="#">
+                        <div class="picture"><img src="~/Content/images/products/dress/4.png" /></div>
+                    </a>
+                    <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                    <div class="price">999.999 VNĐ</div>
+                </div>
+                <div id="page1">
+                    <div class="page-li">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div id="footer">
+            <div class="top">
+                <div class="logo"><img src="~/Content/images/banner/footer-logo.png" /></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Tìm kiếm nâng cao</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Thông tin</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="line1"></div>
+            <div class="bottom">
+                <p>Coppyright © 2016 3T. All Rights Reserved</p>
+            </div>
+        </div>
+        @RenderBody()
+    </body>
+</html>

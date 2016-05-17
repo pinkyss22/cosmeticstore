@@ -1,0 +1,10 @@
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\DAL.dll.config
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\DAL.dll
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\DAL.pdb
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\BOL.dll
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\BOL.pdb
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\obj\Debug\DAL.dll
+C:\Users\Top\Desktop\3Layer\ClothesStore1\DAL\obj\Debug\DAL.pdb

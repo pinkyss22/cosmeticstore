@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Quản lý danh mục";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@model IEnumerable<ClothesStore1.Models.Category>
+
+
+<div id="right">
+    <div class="line-top"></div>
+    <div class="title">Quản lý danh mục</div>
+    <div class="line-bottom"></div>
+    <div class="actionlink">
+        @Html.ActionLink("Thêm mới", "Create", "Category")
+    </div>
+    @if (Model != null)
+    {
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Tên danh mục</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        @Html.ActionLink("Cập nhật", "Edit",new {id = @item.CategoryId})
+                        @Html.ActionLink("Xóa", "Delete", new {id = @item.CategoryId })
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <h3>Dữ liệu trống, vui lòng thêm mới dữ liệu</h3>
+    }
+</div>

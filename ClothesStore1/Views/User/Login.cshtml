@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div id="wrap">
+    <div id="login">
+            <div class="title">ĐĂNG NHẬP</div>
+            @using (@Html.BeginForm("Login","User", FormMethod.Post))
+            {
+                <div class="label">Tên đăng nhập: </div>
+                @Html.TextBox("UserName", null, new {@type="text", required ="required" })
+                <div class="label">Mật khẩu</div>
+                @Html.TextBox("UserPassWord", null, new { @type="password", required = "required"})
+                <input type="submit" value="Đăng nhập" />
+            }
+        </div>
+</div>

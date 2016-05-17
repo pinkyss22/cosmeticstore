@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bạn không thể nhìn thấy nội dung trang này khi chưa đăng nhập</h2>
+
+System.Threading.Thread.Sleep(5000);
+Response.Redirect("/Home/Index");

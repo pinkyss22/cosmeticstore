@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <!--Script-->
+    <script>
+        function changeImage($s) {
+            var image = document.getElementById('myImage');
+            image.src = $s;
+        }
+    </script>
+</head>
+<body>
+    <div id="head-menu">
+        <div id="logo">
+            <a href=""><img src="~/Content/images/products/logo.png" /></a>
+        </div>
+        <div id="menu">
+            <div class="dropdow">
+                <div class="dropdown-content">
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Danh mục</a></div>
+                        <div class="parent-menu-content">
+                            <div class="child-menu"><a href="#">Danh mục 1</a></div>
+                            <div class="child-menu"><a href="#">Danh mục 2</a></div>
+                            <div class="child-menu"><a href="#">Danh mục 3</a></div>
+                        </div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Blogs</a></div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Giới thiệu</a></div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Thông tin liên hệ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin">
+                <div class="parent-menu">
+                    <div class="title">Hello, Admin</div>
+                    <div class="parent-menu-content">
+                        <div class="child-menu"><a href="#">Đăng sản phẩm</a></div>
+                        <div class="child-menu"><a href="#">Quản lý sản phẩm</a></div>
+                        <div class="child-menu"><a href="#">Quản lý danh mục</a></div>
+                        <div class="child-menu"><a href="#">Quản lý banner</a></div>
+                        <div class="child-menu"><a href="#">Quản lý Đơn hàng</a></div>
+                        <div class="child-menu"><a href="#">Đăng xuất</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <a href="#"></a>
+                    <div class="search-content">
+                        <input type="text">
+                        <input type="button" value="Tìm" />
+                        <a href="#">Nâng cao</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <a href="#"></a>
+                    <div class="cart-content">
+                        <div class="box">
+                            <div class="picture">
+                                <img src="~/Content/images/products/dress/1.png" />
+                            </div>
+                            <div class="name">Tên sản phẩm</div>
+                            <div class="price">999 999  VNĐ</div>
+                        </div>
+                        <div class="box">
+                            <div class="picture">
+                                <img src="~/Content/images/products/dress/1.png" />
+                            </div>
+                            <div class="name">Tên sản phẩm</div>
+                            <div class="price">999 999  VNĐ</div>
+                        </div>
+                        <div class="action">
+                            <input type="button" value="Thanh toán" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+    </div>
+    <!--Details-->
+    <div id="details-action">
+        <div class="left"><img src="~/Content/images/mobile/price.png"/><p>999 999 VNĐ<p></div>
+        <div class="mid"><img src="~/Content/images/mobile/buy-now.png"/><a href="#">Mua Ngay</a></div>
+        <div class="right"><img src="~/Content/images/mobile/cart.png" /><a href="#">Thêm</a></div>
+    </div>
+    <div id="details">
+        <div id="status">
+            <div class="name"><a href="#">Home</a></div>
+            <div class="symb"></div>
+            <div class="name"><a href="#">Category Name</a></div>
+            <div class="symb"></div>
+            <div class="name actived">Product Name</div>
+        </div>
+        <div id="detail-content">
+            <div id="left">
+                <div id="slide-image">
+                    <div id="content">
+                        <img id="myImage" src="~/Content/images/products/1.jpg" />
+                    </div>
+                    <div id="list">
+                        <div class="picture" onclick="changeImage('Content/images/products/1.jpg')">
+                            <img src="~/Content/images/products/1.jpg">
+                        </div>
+                        <div class="picture" onclick="changeImage('Content/images/products/2.jpg')">
+                            <img src="~/Content/images/products/2.jpg">
+                        </div>
+                        <div class="picture" onclick="changeImage('Content/images/products/3.jpg')">
+                            <img src="~/Content/images/products/3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="name">Tên sản phẩm</div>
+                <div class="supplier"><b>Nhà sản xuất:</b> Việt Nam</div>
+                <div class="des">
+                    Váy đầm liền thân công sở đẹp mùa hè 2016 phong cách Hàn Quốc đang là một trong những xu hướng mà nhiều nàng công sở chọn lựa trong mùa hè này. Với những mẫu váy mang phong cách Hàn Quốc đầy trẻ trung, ngọt ngào, những kiểu dáng váy đa dạng phù hợp với vóc dáng của từng nàng công sở như váy liền thân cổ peter pan, váy liền thân sát nách, váy liền thân dáng ngắn… Các nàng công sở sẽ xuất hiện tại nơi làm việc của mình với một vẻ ngoài rạng rỡ khó ai sánh bằng. Bên cạnh đó, chất liệu vải được lựa chọn mang tính thấm hút mồ hôi tốt, mềm mại và sắc màu nhã nhặn, các nàng công sở sẽ cảm thấy cực thoải mái, điệu đà mà không làm mất đi tính chỉn chu nghiêm túc trong set đồ công sở. Để tận hưởng cảm giác tuyệt vời do những chiếc váy liền công sở đẹp đem lại, các nàng hãy chiêm ngưỡng BST váy liền thân công sở đẹp mùa hè của thuviendoisong.vn chúng tôi giới thiệu dưới đây và nhanh chóng sắm cho mình nhé.
+                    Váy liền thân công sở sát nách đẹp điệu đà
+                    Những mẫu váy liền thân công sở sát nách luôn là lựa chọn được nhiều nàng công sở lựa chọn. Phần tay áo được thiết kế sát nách giúp các nàng dễ dàng khoe bờ vai thon, đôi tay trắng ngần quyến rũ. Bên cạnh đó, dáng váy được chiết eo giúp các nàng che đi vòng 2 “bự”, tạo cảm giác người cao hơn, thanh thoát hơn. Mẫu váy này rất phù hợp với các nàng có vóc dáng hơi gầy, hoặc các nàng sở hữu form người nhỏ nhắn.
+                </div>
+                <div class="price"> 999 999 VNĐ</div>
+                <div class="cart"><a href="#"><img src="~/Content/images/symbol/add-to-cart.png" /></a></div>
+            </div>
+        </div>            
+    </div>
+    <div class="line-detail"></div>
+    <div id="featured-product">
+        <div class="title">SẢN PHẨM cùng loại</div>
+        <div class="list-product">
+            <div class="box first">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/1.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+            </div>
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/2.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+            </div>
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/3.jpg" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+            </div>
+            <div class="box last">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/4.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+            </div>
+        </div>
+
+    </div>
+    <!---->
+    <div id="footer">
+        <div class="top">
+            <div class="logo"><img src="~/Content/images/banner/footer-logo.png" /></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="line"></li>
+                <li><a href="#">Blog</a></li>
+                <li class="line"></li>
+                <li><a href="#">Tìm kiếm nâng cao</a></li>
+                <li class="line"></li>
+                <li><a href="#">Thông tin</a></li>
+                <li class="line"></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="line1"></div>
+        <div class="bottom">
+            <p>Coppyright © 2016 3T. All Rights Reserved</p>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <!--js-->
+    @*<script src="~/Content/js/bootstrap-hover-dropdown.min.js"></script>*@
+</body>
+</html>

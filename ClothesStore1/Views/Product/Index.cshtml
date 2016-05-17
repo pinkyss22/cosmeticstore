@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ClothesStore1.Models.Product>
+
+@{
+    ViewBag.Title = "Quản lý sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div id="right">
+    <div class="line-top"></div>
+    <div class="title">Quản lý sản phẩm</div>
+    <div class="line-bottom"></div>
+    <div class="actionlink">
+        @Html.ActionLink("Thêm mới", "Create", "Product")
+    </div>
+
+    @using (@Html.BeginForm("index","Product",FormMethod.Post, new {@class="ViewByCategory"}))
+    {
+        <div id="Category">
+            Xem theo: @Html.DropDownList("CategoryId", (IEnumerable<SelectListItem>)ViewBag.CatId, ("-- Tất cả --"))
+        </div>
+    }
+    <div id="pagelist">
+        @for (int i = (int.Parse(ViewBag.Sum) / 10) + 1; i >= 1; i--)
+        {
+            <div class="pagenumber">
+                @Html.ActionLink(@i.ToString(), "index", new { @page = @i })
+            </div>
+        }
+    </div>
+    @if (Model.Count() != 0)
+    {
+        <table>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="picture"><img src="@item.mainImage" /></td>
+                    <td>@item.ProductName</td>
+                    <td>@item.ProductQuantity</td>
+                    <td>@item.ProductPrice</td>
+                    <td>
+                        @Html.ActionLink("Cập nhật", "Edit", new { id = @item.ProductId })
+                        @Html.ActionLink("Xóa", "Delete", new { id = @item.ProductId })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <h3>Mục này không có dữ liệu</h3>
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+<script>
+    $(document).ready(function () {
+        $("select").change(function () {
+            $(".ViewByCategory").submit();
+        });
+    });
+
+</script>

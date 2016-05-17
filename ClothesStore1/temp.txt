@@ -1,0 +1,7 @@
+﻿
+ <form>
+        <div class="label">Tên danh mục: </div>
+        <input type="text" name="ProductName" />
+        <br>
+        <input type="button" value="Tạo mới" />
+    </form>

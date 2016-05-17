@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    @*<div id="ahihi"></div>*@
+    <div id="head-menu">
+        <div id="logo">
+            <a href=""><img src="~/Content/images/products/logo.png" /></a>
+        </div>
+        <div id="menu">
+            <div class="dropdow">
+                <div class="dropdown-content">
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Danh mục</a></div>
+                        <div class="parent-menu-content">
+                            <div class="child-menu"><a href="#">Danh mục 1</a></div>
+                            <div class="child-menu"><a href="#">Danh mục 2</a></div>
+                            <div class="child-menu"><a href="#">Danh mục 3</a></div>
+                        </div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Blogs</a></div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Giới thiệu</a></div>
+                    </div>
+                    <div class="parent-menu">
+                        <div class="title"><a href="#">Thông tin liên hệ</a></div>
+                    </div>
+                </div>
+            </div>
+            @if (System.Web.HttpContext.Current.Session["user"] != null)
+            { 
+                <div class="admin">
+                <div class="parent-menu">
+                    <div class="title">Hello, Admin</div>
+                    <div class="parent-menu-content">
+                        <div class="child-menu"><a href="#">Đăng sản phẩm</a></div>
+                        <div class="child-menu"><a href="#">Quản lý sản phẩm</a></div>
+                        <div class="child-menu"><a href="#">Quản lý danh mục</a></div>
+                        <div class="child-menu"><a href="#">Quản lý banner</a></div>
+                        <div class="child-menu"><a href="#">Quản lý Đơn hàng</a></div>
+                        <div class="child-menu"><a href="#">Đăng xuất</a></div>
+                    </div>
+                </div>
+            </div>
+            }            
+            <div class="right">
+                <div class="search">
+                    <a href="#"></a>
+                    <div class="search-content">
+                        <input type="text">
+                        <input type="button" value="Tìm" />
+                        <a href="#">Nâng cao</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <a href="#"></a>
+                    <div class="cart-content">
+                        <div class="box">
+                            <div class="picture">
+                                <img src="~/Content/images/products/dress/1.png" />
+                            </div>
+                            <div class="name">Tên sản phẩm</div>
+                            <div class="price">999 999  VNĐ</div>
+                        </div>
+                        <div class="box">
+                            <div class="picture">
+                                <img src="~/Content/images/products/dress/1.png" />
+                            </div>
+                            <div class="name">Tên sản phẩm</div>
+                            <div class="price">999 999  VNĐ</div>
+                        </div>
+                        <div class="action">
+                            <input type="button" value="Thanh toán" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+    </div>
+    <div id="featured-product">
+        <div class="title">SẢN PHẨM ĐẶC TRƯNG</div>
+        <div class="list-product">
+            <div class="box first">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/1.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/2.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/3.jpg" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+            <div class="box last">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/dress/4.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="featured-product">
+        <div class="title">SALE OFF</div>
+        <div class="list-product">
+            <div class="box first">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/perfume/1.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/perfume/2.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+
+            <div class="box second">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/perfume/3.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+            <div class="box last">
+                <a href="#">
+                    <div class="picture"><img src="~/Content/images/products/perfume/4.png" /></div>
+                </a>
+                <div class="name"><a href="#">ĐÂY LÀ TÊN SẢN PHẨM</a></div>
+                <div class="price">999.999 VNĐ</div>
+                <div class="bottom">
+                    <div class="bleft"><a href="#">Mua ngay</a></div>
+                    <div class="bright"><a href="#">Thêm vào giỏ hàng</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <img src="~/Content/images/banner/banner.jpeg" />
+    </div>
+    <div id="top">
+        <div class="box box-1">
+            <div class="title">Sản phẩm bán chạy nhất</div>
+            <div class="line">
+            </div>
+            <div class="list-box">
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/11.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/12.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/13.png" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box box-2">
+            <div class="title">sản phẩm mới</div>
+            <div class="line"></div>
+            <div class="list-box">
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/11.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/12.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/13.png" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box box-3">
+            <div class="title">Sản phẩm của tuần</div>
+            <div class="line"></div>
+            <div class="list-box">
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/11.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/12.jpg" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <div class="bi-image"><img src="~/Content/images/products/13.png" /></div>
+                    <div class="bi-left">
+                        <div class="bi-name"><a href="#">đây là tên sản phẩm</a>    </div>
+                        <div class="bi-price">999 999 VNĐ</div>
+                        <div class="bi-stat"><p>Còn hàng</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+    </div>
+    <div id="post">
+        <div id="title">Bài đăng gần đây</div>
+        <div class="line"></div>
+        <div id="left">
+            <div class="post-box">
+                <div class="picture"><img src="~/Content/images/post/post-1.png" /></div>
+                <div class="title"><a href="#">Đây là tiêu đề</a></div>
+                <div class="description">Dành cho em dành cho em niềm đam mê tuyệt vời Mà anh muốn nắm lấy trong giấc mơ. Dành cho em dành cho em niềm đam mê tuyệt vờ</div>
+            </div>
+        </div>
+        <div id="right">
+            <div class="post-box">
+                <div class="picture"><img src="~/Content/images/post/post-2.png" /></div>
+                <div class="title"><a href="#">đây là tiêu đề</a></div>
+                <div class="description">Dành cho em dành cho em niềm đam mê tuyệt vời Mà anh muốn nắm lấy trong giấc mơ. Dành cho em dành cho em niềm đam mê tuyệt vờ</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="top">
+            <div class="logo"><img src="~/Content/images/banner/footer-logo.png" /></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="line"></li>
+                <li><a href="#">Blog</a></li>
+                <li class="line"></li>
+                <li><a href="#">Tìm kiếm nâng cao</a></li>
+                <li class="line"></li>
+                <li><a href="#">Thông tin</a></li>
+                <li class="line"></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="line1"></div>
+        <div class="bottom">
+            <p>Coppyright © 2016 3T. All Rights Reserved</p>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <script>
+        var menu = document.querySelector('#menu');
+        var headmenu = document.querySelector('#head-menu');
+        var width = document.documentElement.clientWidth;
+        if (width == 320) {
+            var menuPosition = menu.getBoundingClientRect().top;
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset >= menuPosition) {
+                    menu.style.position = 'fixed';
+                    menu.style.top = '0px';
+                    menu.style.marginTop = '0px';
+                } else {
+                    menu.style.position = 'static';
+                    menu.style.top = '';
+                }
+            });
+        }
+        else {
+            //var menuPosition = headmenu.getBoundingClientRect().top;
+            //window.addEventListener('scroll', function () {
+            //    if (window.pageYOffset >= menuPosition) {
+            ////headmenu.style.position = 'static';
+            //headmenu.style.position = 'fixed';
+            //headmenu.style.top = '0px';
+            //headmenu.style.marginTop = '0px';
+            //headmenu.style.top = '0px';
+            //headmenu.style.background = 'white';
+            //headmenu.style.top = '0px';
+            //headmenu.style.marginTop = '0px';
+            //} else {
+            //    headmenu.style.position = 'static';
+            //    headmenu.style.top = '';
+            //}
+            //});
+        }
+    </script>
+</body>
+</html>
